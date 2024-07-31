@@ -1,0 +1,152 @@
+:root {
+    --blue-dark: #110f2b;
+    --gap: 3rem;
+    --middle-white: #eee;
+    --btn-color-bg: #2f3a83;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--blue-dark);
+    line-height: 1.5;
+    background: gray;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue-dark);
+}
+
+h2{
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.cloud-bg {
+    background-image: url(../img/background-cloud.svg);
+    background-size: cover;
+    background-position: center center;
+    color: var(--middle-white);
+}
+
+.white-bg {
+    background: var(--middle-white);
+    color: var(--blue-dark);
+}
+
+.logo-img {
+    width: 4rem;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0;
+    padding: 10rem var(--gap);
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.btn-saiba{
+    color: var(--middle-white);
+    background: var(--btn-color-bg);
+    margin-top: 3rem;
+    width: 60%;
+    padding: 5px 0;
+    text-align: center;
+    border: 1px solid var(--middle-white);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.btn-saiba:hover{
+    color: var(--btn-color-bg);
+    background: var(--middle-white);
+
+}
+
+/* -----------menu--------------- */
+
+.menu {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--blue-dark);
+    position: relative;
+}
+
+.menu ul li a::after {
+    background: var(--blue-dark);
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 80%;
+    left: 10%;
+}
+
+/* ---------home------------ */
+
+.container-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: stretch;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.container-content-text,
+.content-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.content-img img{
+    max-width: 100%;
+    height: auto;
+}
