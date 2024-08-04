@@ -313,6 +313,10 @@ a {
     .card-moon-bottom {
         justify-content: space-evenly;
     }
+
+    .card-moon-bottom .home-text{
+    min-width: 30ch;
+    }
 }
 
 /* ---------footer---------- */
