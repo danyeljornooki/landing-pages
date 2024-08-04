@@ -130,7 +130,7 @@ a {
 }
 
 @media (width < 570px) {
-    .aside{
+    .aside {
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -176,7 +176,7 @@ a {
     cursor: pointer;
 }
 
-.home-btn:hover{
+.home-btn:hover {
     box-shadow: inset 1px 1px 7px #2e2e36;
 }
 
@@ -196,6 +196,7 @@ a {
     }
 
     .home-text {
+        width: 35ch;
         font-size: 1rem;
     }
 }
@@ -247,7 +248,7 @@ a {
     cursor: pointer;
 }
 
-.card-btn:hover{
+.card-btn:hover {
     border: 0.19rem solid var(--opactity);
     background: #d03960;
     color: white;

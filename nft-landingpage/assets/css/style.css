@@ -408,6 +408,7 @@ button {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    padding-inline: 1rem;
 }
 
 .bunner-description {
@@ -430,6 +431,7 @@ button {
 
 @media(width < 750px) {
     .bunner-register {
+        width: 35ch;
         height: auto;
         flex-direction: column;
         padding-block: 2rem;
@@ -546,6 +548,21 @@ button {
     font-weight: 500;
 }
 
+@media(width < 750px) {
+    .join-text {
+        width: 32ch;
+    }
+
+    .end{
+        width: 35ch;
+    }
+
+    .join-title {
+        width: 15ch;
+        text-align: center;
+    }
+}
+
 /* ----------footer-------- */
 
 .footer {
@@ -631,16 +648,17 @@ button {
 }
 
 @media(width < 900px) {
-    .footer-dados {
-        flex-direction: column;
-    }
-
     .footer-one {
         margin-bottom: 1rem;
     }
 
     .footer-two {
         margin-bottom: 1rem;
+    }
+
+    .footer-email {
+        width: 10rem;
+
     }
 }
 
