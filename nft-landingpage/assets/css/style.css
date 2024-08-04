@@ -77,6 +77,11 @@ button {
     font-weight: 600;
 }
 
+.header-logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .nav-ul {
     display: flex;
     gap: var(--gap);
@@ -374,8 +379,8 @@ button {
 .btn-arrow {
     width: 2rem;
     background-color: var(--cian-green);
-    padding: 5px;
-    border-radius: 5px;
+    padding: 7px;
+    border-radius: 10px;
 }
 
 .btn-arrow img {
@@ -639,7 +644,7 @@ button {
     }
 }
 
-.copyright{
+.copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -648,12 +653,12 @@ button {
     padding-bottom: 1rem;
 }
 
-.copyright ul{
+.copyright ul {
     list-style: none;
     overflow: hidden;
 }
 
-.copyright li{
+.copyright li {
     float: left;
     padding-inline: 1rem;
 }
