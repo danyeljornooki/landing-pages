@@ -44,7 +44,7 @@ a {
     justify-content: center;
 }
 
-.menu a{
+.menu a {
     font-weight: bold;
     padding: 0.5rem 1rem;
     transition: all 200ms ease-in-out;
@@ -55,7 +55,7 @@ a {
     box-shadow: 0px 0px 5px #1d1d1d;
 }
 
-.galery{
+.galery {
     max-width: 1280px;
     margin: auto;
     padding-block: 3rem;
@@ -65,25 +65,43 @@ a {
 
 }
 
-.card a{
+.card a {
     margin-inline: 2rem;
     color: #1d1d1d;
 }
 
-.card{
+.card {
+    width: 100%;
     margin-inline: 15px;
-    width: 500px;
-    transition: all 300ms ease-in-out;
+    max-width: 500px;
+    transition: all 400ms ease-in-out;
 }
 
-.card:hover{
-    width: 100rem;  /* Use 300px ao invés de 300rem, que é uma unidade muito grande */
+.card:hover {
+    width: 200rem;
     height: 300px;
 }
 
-.card p{
+.card p {
     background-color: white;
     padding: 15px;
     text-align: center;
     font-weight: 600;
+    font-size: 13px;
+}
+
+@media(width < 950px) {
+    .galery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-block: 15px;
+        max-width: 350px;
+    }
+
+    .card:hover {
+        max-width: 450px;
+    }
 }
