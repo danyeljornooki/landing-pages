@@ -4,42 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>layouts</title>
     <style>
-        body {
-            max-width: 1080px;
-            margin: auto;
-            background: #ffffff;
-        }
 
-        .menu {
-            display: flex;
-            justify-content: center;
-            margin-top: 2rem;
-        }
-
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: bold;
-            color: #1b163b;
-            padding: 0.5rem 1rem;
-            transition: all 200ms ease-in-out;
-        }
-
-        a:hover {
-            box-shadow: 0px 0px 5px #1b163b;
-        }
     </style>
 </head>
 
 <body>
-    <div class="menu">
-        <a href="landing-page-prod/index.html">produto</a>
-        <a href="nft-landingpage/index.html">NFT</a>
-        <a href="AI-landingpage/index.html">AI</a>
-    </div>
+    <header>
+        <!-- <nav class="menu">
+            <a href="">produto</a>
+            <a href="">NFT</a>
+            <a href="">AI</a>
+        </nav> -->
+    </header>
+
+    <section class="galery">
+        <div id="card-one" class="card"><a href="./AI-landingpage/index.html"><img src="/img/IA.png" alt="">
+                <p>LandingPage para um site IA</p>
+            </a></div>
+        <div id="card-two" class="card"><a href="./landing-page-prod/index.html"><img src="/img/prod.png" alt="">
+                <p>LandingPage para um site de produto</p>
+            </a></div>
+        <div id="card-three" class="card"><a href="./nft-landingpage/index.html"><img src="/img/nft.png" alt="">
+                <p>LandingPage para um site de jogo nft</p>
+            </a></div>
+
+    </section>
 </body>
 
 </html>
